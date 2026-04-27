@@ -1,27 +1,47 @@
 # DCT Explorer App
 
-A specialized Android application designed for exploring and visualizing Discrete Cosine Transform (DCT) concepts. This tool provides an intuitive interface for understanding signal processing and data compression techniques.
+An Android application that performs **image compression using Discrete Cosine Transform (DCT)**.
+
+## 📌 Overview
+
+This project demonstrates how images can be compressed by converting them into frequency components using DCT, reducing file size while maintaining visual quality.
 
 ## 🚀 Features
 
-* **DCT Visualization:** Interactive representation of Discrete Cosine Transform algorithms.
-* **Data Analysis:** Tools to explore how DCT affects different types of input signals or images.
-* **Java-Based:** Built using native Java for robust performance and compatibility.
-* **Clean UI:** Simple and effective user interface for educational or professional exploration.
+* Select image from device
+* Apply DCT-based compression
+* Compare original vs compressed image
+* Save compressed output
 
 ## 🛠️ Tech Stack
 
-* **Language:** Java
-* **Build System:** [Gradle](https://gradle.org/)
-* **Minimum SDK:** (e.g., API 24+)
-* **Target SDK:** (e.g., API 34)
+* Java
+* Android SDK
+* XML
 
-## 📁 Project Structure
+## 🧠 How It Works
 
-```text
-├── app/                # Main application module
-│   ├── src/            # Source code and resources
-│   └── build.gradle    # App-level build configuration
-├── gradle/             # Gradle wrapper files
-├── build.gradle        # Project-level build configuration
-└── settings.gradle     # Project module settings
+* Image is divided into small blocks (8×8)
+* DCT is applied to each block
+* Less important (high-frequency) data is reduced
+* Image is reconstructed using inverse DCT
+
+## ▶️ How to Run
+
+```bash
+git clone https://github.com/PrasadK2402/DCT-Explorer-App.git
+```
+
+* Open in Android Studio
+* Sync Gradle
+* Run on emulator or device
+
+## 📂 Project Structure
+
+* `app/` → main application code
+* `gradle/` → build system files
+* `build.gradle` → project configuration
+
+## 📄 License
+
+Open-source project for learning purposes.
